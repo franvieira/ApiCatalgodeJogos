@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApiCatalgodeJogos.Services
 {
-    public interface IJogosServices
+    public interface IJogoService : IDisposable
     {
         Task<List<JogoViewModel>> Obter(int pagina, int quantidade);
         Task<JogoViewModel> Obter(Guid id);
